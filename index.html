@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Donate ToDay</title>
     <!-- !daisyUi and tailwind -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
@@ -17,11 +17,243 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-color": "#FF5959",
             },
           },
         },
       };
     </script>
+    <style>
+      .background {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0) 00%,
+          rgba(0, 0, 0, 0.8) 100%
+        );
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header class="md:mb-32 mb-20">
+      <!-- section banner -->
+      <div
+        class="bg-[url('./assets/images/donation1.jpg')] bg-no-repeat bg-cover bg-center"
+      >
+        <div class="background">
+          <div class="text-center py-[170px]">
+            <h1 class="md:text-6xl text-4xl text-white font-bold mb-5">
+              Let’s Help Those Who Are <br />
+              More In Need
+            </h1>
+            <p class="text-lg mb-7 text-white opacity-80">
+              Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+              falli <br />deterruisset. No duo populo animal noluisse, enim
+            </p>
+            <button
+              class="text-white font-semibold text-xl bg-primary-color rounded-lg py-3 px-5 hover:scale-95 hover:bg-[#ae2626] transition duration-200"
+            >
+              Donate Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- section donate -->
+      <section class="text-center lg:w-10/12 w-11/12 mx-auto md:mb-32 mb-20">
+        <h1 class="md:text-5xl text-3xl font-bold mb-5">Donate Today</h1>
+        <p class="text-lg mb-12 text-gray-600">
+          Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+          falli <br />
+          deterruisset. No duo populo animal noluisse, enim
+        </p>
+        <div
+          class="flex gap-5 justify-center flex-col sm:flex-wrap sm:flex-row lg:flex-nowrap mb-12 w-3/4 mx-auto"
+        >
+          <div
+            class="text-3xl font-bold text-[#707070] py-10 px-6 bg-gray-100 rounded-md max-w-40 mx-auto"
+          >
+            100TK
+          </div>
+          <div
+            class="text-3xl font-bold text-[#707070] py-10 px-6 bg-gray-100 rounded-md max-w-40 mx-auto"
+          >
+            200TK
+          </div>
+          <div
+            class="text-3xl font-bold text-[#707070] py-10 px-6 bg-gray-100 rounded-md max-w-40 mx-auto"
+          >
+            500TK
+          </div>
+          <div
+            class="text-3xl font-bold text-[#707070] py-10 px-6 bg-gray-100 rounded-md max-w-40 mx-auto"
+          >
+            1000TK
+          </div>
+          <div
+            class="text-3xl font-bold text-[#707070] py-10 px-6 bg-gray-100 rounded-md max-w-40 mx-auto"
+          >
+            5000TK
+          </div>
+        </div>
+        <input
+          type="text"
+          placeholder="Other Amount (Taka)"
+          class="text-center md:w-2/4 w-3/4 border-b border-[#00000053] pb-2 mb-8"
+        />
+        <br />
+        <button
+          class="text-white font-semibold text-xl bg-primary-color rounded-lg py-3 px-5 hover:scale-95 hover:bg-[#ae2626] transition duration-200"
+        >
+          Donate Now
+        </button>
+      </section>
+      <!--section donate plan  -->
+      <section class="text-center lg:w-10/12 w-11/12 mx-auto md:mb-32 mb-20">
+        <div>
+          <h1 class="md:text-5xl text-3xl font-bold mb-5">Our Donate Plan</h1>
+          <p class="text-lg mb-12 text-gray-600">
+            Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+            falli <br />
+            deterruisset. No duo populo animal noluisse, enim
+          </p>
+        </div>
+        <!-- container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- card -->
+          <div
+            class="bg-[#4F9DA610] py-14 px-5 md:text-start rounded-lg text-center"
+          >
+            <img
+              src="assets/icons/food.png"
+              alt=""
+              class="mb-7 mx-auto md:mx-0"
+            />
+            <h1 class="text-2xl font-semibold mb-4">Food for a family</h1>
+            <p class="opacity-60">
+              Amet minim mollit non deserunt <br class="md:hidden xl:block" />
+              ullamco est sit aliqua dolor do amet
+              <br class="md:hidden xl:block" />
+              sint. Velit officia consequat duis enim
+              <br class="md:hidden xl:block" />
+              velit mollit.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-[#FF595910] py-14 px-5 md:text-start text-center rounded-lg"
+          >
+            <img
+              src="assets/icons/shelter.png"
+              alt=""
+              class="mb-7 mx-auto md:mx-0"
+            />
+            <h1 class="text-2xl font-semibold mb-4">Shelter for a family</h1>
+            <p class="opacity-60">
+              Amet minim mollit non deserunt <br class="md:hidden xl:block" />
+              ullamco est sit aliqua dolor do amet
+              <br class="md:hidden xl:block" />
+              sint. Velit officia consequat duis enim
+              <br class="md:hidden xl:block" />
+              velit mollit.
+            </p>
+          </div>
+          <!-- card-3 -->
+          <div
+            class="bg-[#FFF4D6] py-14 px-5 md:text-start text-center rounded-lg"
+          >
+            <img
+              src="assets/icons/Frame-1.png"
+              alt=""
+              class="mb-7 mx-auto md:mx-0"
+            />
+            <h1 class="text-2xl font-semibold mb-4">Education for a child</h1>
+            <p class="opacity-60">
+              Amet minim mollit non deserunt <br class="md:hidden xl:block" />
+              ullamco est sit aliqua dolor do amet
+              <br class="md:hidden xl:block" />
+              sint. Velit officia consequat duis enim
+              <br class="md:hidden xl:block" />
+              velit mollit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- section how to contribute -->
+      <section class="text-center lg:w-10/12 w-11/12 mx-auto md:mb-32 mb-20">
+        <!-- container -->
+        <div
+          class="flex gap-10 items-center flex-col-reverse md:flex-row mb-20"
+        >
+          <div class="text-start flex-1">
+            <h1 class="xl:text-5xl md:text-4xl text-3xl font-bold mb-5">
+              Their lives depend on <br class="md:hidden xl:block" />
+              your donation
+            </h1>
+            <p class="text-lg mb-5 text-gray-600 lg:w-3/4">
+              Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+              falli deterruisset. No duo populo animal noluisse, enim
+            </p>
+            <p class="text-lg mb-5 text-gray-600 lg:w-3/4">
+              Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+              falli deterruisset.
+            </p>
+            <button
+              class="text-white font-semibold xl:text-xl bg-primary-color rounded-lg py-3 px-5 hover:scale-95 hover:bg-[#ae2626] transition duration-200 text-base"
+            >
+              How to Contribute?
+            </button>
+          </div>
+          <div class="flex-1">
+            <img src="assets/images/donation13.jpg" alt="" />
+          </div>
+        </div>
+        <!-- container -->
+        <div class="flex gap-10 items-center flex-col md:flex-row">
+          <div class="flex-1">
+            <img src="assets/images/donation7.jpg" alt="" />
+          </div>
+          <div class="text-start flex-1">
+            <h1 class="xl:text-5xl md:text-4xl text-3xl font-bold mb-5">
+              They need us <br />
+              to suvive
+            </h1>
+            <p class="text-lg mb-5 text-gray-600 lg:w-3/4">
+              Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+              falli deterruisset. No duo populo animal noluisse, enim
+            </p>
+            <p class="text-lg mb-5 text-gray-600 lg:w-3/4">
+              Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+              falli deterruisset.
+            </p>
+            <button
+              class="text-white font-semibold xl:text-xl bg-primary-color rounded-lg py-3 px-5 hover:scale-95 hover:bg-[#ae2626] transition duration-200 text-base"
+            >
+              How to Contribute?
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- section updates -->
+      <section class="text-center lg:w-full w-11/12 mx-auto md:mb-32 mb-20">
+        <h1 class="md:text-5xl text-3xl font-bold mb-5">Get My Updates</h1>
+        <p class="text-lg mb-12 text-gray-600 lg:w-2/4 mx-auto">
+          Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam
+          falli deterruisset. No duo populo animal noluisse, enim
+        </p>
+        <div
+          class="lg:w-2/4 md:w-3/5 w-11/12 py-20 mx-auto bg-[#FFF4D6] relative"
+        >
+          <div class="flex justify-center">
+            <input type="text" placeholder="email" class="w-1/2 py-3 pl-4" />
+            <button class="bg-primary-color py-3 px-4">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-black text-center">
+      <h1 class="text-red-500 font-bold text-3xl pt-10">Be Humble</h1>
+      <p class="text-white font-semibold opacity-70 pb-10">I'm gonna DO IT</p>
+    </footer>
+  </body>
 </html>
